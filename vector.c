@@ -129,7 +129,9 @@ void strVec_delete(strVec* vec){
 	}
 
 	free(vec->arrP);
+	vec->arrP = NULL;
 	free(vec);
+	vec = NULL;
 }
 
 //Counts the number of strings in vec that match str exactly

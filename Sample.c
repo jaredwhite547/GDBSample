@@ -9,7 +9,7 @@ void appendToVector(char* str, strVec* vec){
 
 void printVector(strVec* vec){
 	for(size_t i=0; i < vec->size; i++){
-		printf(strVec_get_copy(vec, i));
+		printf("%s\n", strVec_get_copy(vec, i));
 	}
 };
 		
@@ -26,10 +26,7 @@ int main(){
 	appendToVector(s4,vec);
 	strVec_insert(vec, s3, 4);
 	printVector(vec);
-	printf("Appended %s to vector.\n", s5);
-	strVec_pop_back(vec);
-	strVec_pop_back(vec);
-	strVec_pop_back(vec);
+
 
 	return 0;
-}
+};
