@@ -1,0 +1,17 @@
+Undefined command: "ls".  Try "help".
+Breakpoint 2 at 0x4007f4: file Sample.c, line 21.
+Continuing.
+
+Breakpoint 2, main () at Sample.c:21
+==656356== LEAK SUMMARY:
+==656356==    definitely lost: 0 (+0) bytes in 0 (+0) blocks
+==656356==    indirectly lost: 0 (+0) bytes in 0 (+0) blocks
+==656356==      possibly lost: 0 (+0) bytes in 0 (+0) blocks
+==656356==    still reachable: 49 (+49) bytes in 3 (+3) blocks
+==656356==         suppressed: 0 (+0) bytes in 0 (+0) blocks
+==656356== Reachable blocks (those to which a pointer was found) are not shown.
+==656356== To see them, add 'reachable any' args to leak_check
+==656356== 
+#0  main () at Sample.c:21
+Continuing.
+[Inferior 1 (Remote target) exited normally]
