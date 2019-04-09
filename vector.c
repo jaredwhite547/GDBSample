@@ -76,8 +76,8 @@ void strVec_pop_back(strVec* vec){
 	//assert(vec->arrP);
 	//assert(vec->size != 0);
 
-	//free(vec->arrP[--vec->size]);
-	free(vec->arrP[vec->size]);
+	free(vec->arrP[--vec->size]);
+	//free(vec->arrP[vec->size]);
 }
 
 //Removes string at index, deleting it.
